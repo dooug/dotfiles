@@ -121,4 +121,6 @@ if [ -d "$HOME/.nvm" ]; then
 . $HOME/.nvm/nvm.sh
 fi
 
+# this file is now in dfm.. yay!
+
 . $HOME/.bashrc.load
