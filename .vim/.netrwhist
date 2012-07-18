@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/etc/ganeti/instance-debootstrap.d'
+let g:netrw_dirhist_2='/data/disk/wd53/distro/001/pressflow-6.24.1-dev/sites/migramp.phy3.thermitic.net/themes/amp/css'
+let g:netrw_dirhist_3='/data/disk/wd53/distro/001/drupal-7.12-dev/sites/sbh.phy3.thermitic.net/modules/media_youtube/b/includes'
+let g:netrw_dirhist_4='/data/disk/wd53/distro/001/drupal-7.12-dev/sites/365.phy3.thermitic.net/modules/contrib/uuid_features'
+let g:netrw_dirhist_5='/data/disk/wd53/distro/001/drupal-7.12-dev/sites/365.phy3.thermitic.net/modules/contrib'
+let g:netrw_dirhist_6='/data/disk/wd53/distro/001/drupal-7.12-dev/sites/365.phy3.thermitic.net/modules/contrib/uuid_features'
+let g:netrw_dirhist_7='/data/disk/wd53/distro/001/drupal-7.12-dev/sites/sbh.phy3.thermitic.net/modules/statehandler/example/example_statehandler_plugins/js'
+let g:netrw_dirhist_8='/data/disk/wd53/distro/001/drupal-7.12-dev/sites/dougsms/modules/services_views'
