@@ -108,8 +108,8 @@ fi
 export PATH=$PATH:~/bin
 
 # nvm
-if [ -d "~/.nvm" ]; then
-. ~/.nvm/nvm.sh
+if [ -d "$HOME/.nvm" ]; then
+. $HOME/.nvm/nvm.sh
 fi
 
 . $HOME/.bashrc.load
