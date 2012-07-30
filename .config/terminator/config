@@ -1,0 +1,18 @@
+[global_config]
+  title_transmit_bg_color = "#414141"
+  focus = mouse
+[keybindings]
+[profiles]
+  [[default]]
+    use_system_font = False
+    font = Liberation Mono 10
+    scrollbar_position = hidden
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
