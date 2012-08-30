@@ -84,6 +84,7 @@ alias la='ls -A'
 
 alias l="ls -alF"
 alias ..="cd .."
+alias less="less -R"
 
 # git aliases
 alias gs='git status '
