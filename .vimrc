@@ -345,6 +345,12 @@ augroup wml
     au!
     autocmd BufRead *.wml set ft=html
 augroup END
+
+augroup ejs
+    au!
+    autocmd BUfread *.ejs set ft=html
+augroup END
+
 "
 " ===================================================================
 " TEMPORARY STUFF - TESTING THINGS
