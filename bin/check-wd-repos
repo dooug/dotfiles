@@ -10,9 +10,14 @@ do
   if cat $REPO_GITDIR/config | grep -q $ORIGIN ; then
     echo -n "$REPO_NAME has our origin "
     if ( cd $REPO_GITDIR && cd .. && git status | grep -q 'nothing to commit' ) ; then
-      echo 'and it is clean+pushed'
+      echo -n 'and it is clean '
+      if ( cd $REPO_GITDIR && cd .. && git status | grep -q ' is ahead of ' ) ; then
+        echo 'but NOT pushed!'
+      else
+        echo 'and pushed'
+      fi
     else
-      echo 'but it is *NOT* clean+pushed'
+      echo 'but it is *NOT* clean'
     fi
   fi
 done
