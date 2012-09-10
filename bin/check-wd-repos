@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Check subdirectories for git repositories with our origin, and print a list to use for dev/stage/prod audits
+
+ORIGIN="pm.theworkdept.com"
+
+for REPO_GITDIR in `find . -maxdepth 3 -type d -name '.git'`
+do
+  REPO_NAME=`echo $REPO_GITDIR | sed 's/\/.git//' | sed 's/^..//'`
+  if cat $REPO_GITDIR/config | grep -q $ORIGIN ; then
+    echo -n "$REPO_NAME has our origin "
+    if ( cd $REPO_GITDIR && cd .. && git status | grep -q 'nothing to commit' ) ; then
+      echo 'and it is clean+pushed'
+    else
+      echo 'but it is *NOT* clean+pushed'
+    fi
+  fi
+done
