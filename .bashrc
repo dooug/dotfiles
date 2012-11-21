@@ -122,6 +122,9 @@ if [ -d "$HOME/.nvm" ]; then
 . $HOME/.nvm/nvm.sh
 fi
 
+# be nice to your group
+umask 002
+
 # this file is now in dfm.. yay!
 
 . $HOME/.bashrc.load
