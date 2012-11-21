@@ -119,7 +119,12 @@ export PATH=$PATH:~/bin
 
 # nvm
 if [ -d "$HOME/.nvm" ]; then
-. $HOME/.nvm/nvm.sh
+  . $HOME/.nvm/nvm.sh
+fi
+
+# ruby gem bin
+if [ -d "/var/lib/gems/1.8/bin" ]; then
+  export PATH=$PATH:/var/lib/gems/1.8/bin
 fi
 
 # be nice to your group
