@@ -1,5 +1,8 @@
 version 5.4
 
+" vimbundle dir structure is funny
+call pathogen#infect('~/.vim/bundle/drupalvim/bundle')
+
 " pathogen!
 call pathogen#infect()
 
