@@ -6,7 +6,7 @@
 [profiles]
   [[default]]
     use_system_font = False
-    font = Liberation Mono 9
+    font = Consolas 9
     scrollbar_position = hidden
 [layouts]
   [[default]]
