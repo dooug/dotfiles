@@ -2,4 +2,5 @@ README.md skip
 CHANGELOG.md skip
 t skip
 .gitmodules skip
+entrails skip
 .config recurse
