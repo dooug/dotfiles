@@ -19,5 +19,7 @@ do
     else
       echo 'but it is *NOT* clean'
     fi
+  else
+    echo "$REPO_NAME doesn't have any origin... YIKES"
   fi
 done
