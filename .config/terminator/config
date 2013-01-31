@@ -8,6 +8,7 @@
     use_system_font = False
     font = Consolas 9
     scrollbar_position = hidden
+    visible_bell = True
 [layouts]
   [[default]]
     [[[child1]]]
