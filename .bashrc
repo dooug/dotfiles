@@ -127,6 +127,11 @@ if [ -d "/var/lib/gems/1.8/bin" ]; then
   export PATH=$PATH:/var/lib/gems/1.8/bin
 fi
 
+# git annex bin
+if [ -d "$HOME/dists/git-annex.linux" ]; then
+  export PATH=$PATH:$HOME/dists/git-annex.linux
+fi
+
 # be nice to your group
 umask 002
 

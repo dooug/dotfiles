@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Install latest git-annex on debian
+# run as user
+
+#sudo apt-get install cabal-install
+#cabal update
+#cabal install c2hs git-annex --bindir=$HOME/bin
+
+mkdir ~/dists
+cd ~/dists
+curl -O 'http://downloads.kitenet.net/git-annex/linux/current/git-annex-standalone-i386.tar.gz'
+tar zxvf git-annex-standalone-i386.tar.gz
