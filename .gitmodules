@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/drupalvim"]
 	path = .vim/bundle/drupalvim
 	url = http://git.drupal.org/project/vimrc.git
+[submodule ".vim/bundle/textile.vim"]
+	path = .vim/bundle/textile.vim
+	url = git://github.com/timcharper/textile.vim.git
