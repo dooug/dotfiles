@@ -257,11 +257,13 @@ class getIssues {
 		$contents="=== COMMENTS ==========\n";
 		if(is_file($file)){
 			$file_contents=json_decode(file_get_contents($file));
-			foreach($file_contents->comments as $value){
-				$contents.=$value->created_at.' by '.$value->user."\n";
-				$contents.=$value->body."\n";
-				$contents.="--------------------\n";
-			}
+			if (is_array($file_contents)) {
+        foreach($file_contents as $value){
+          $contents.=$value->created_at.' by '.$value->user->login."\n";
+          $contents.=$value->body."\n";
+          $contents.="--------------------\n";
+        }
+      }
 		}
 		return $contents;
 	}
