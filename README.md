@@ -2,8 +2,9 @@
 
 ## Overview
 
-This repo is a skeleton/template/vanilla version of my dotfiles.  It contains a
-utility to help with managing and updating your dotfiles like I manage mine.
+Fork of [justone's dotfiles project](https://github.com/justone/dotfiles)
+
+Has some nice Drupal and PHP stuff, and other nice things
 
 ## Using this repo
 
