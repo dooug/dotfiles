@@ -1,1 +1,4 @@
 *.sw?
+*.patch
+*.orig
+*.rej
