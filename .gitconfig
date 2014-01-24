@@ -1,6 +1,9 @@
 [user]
 	name = Douglas G Reith
 	email = dougreith@gmail.com
+[core]
+  git-editor = vim
+  editor = vim
 [color]
   branch = auto
   diff = auto
