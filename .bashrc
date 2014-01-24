@@ -126,6 +126,12 @@ fi
 # be nice to your group
 umask 002
 
+# typing d will duplicate current screen
+function dupscreen {
+  screen bash -c "cd \"$PWD\" && exec $SHELL --login"
+}
+alias d=dupscreen
+
 # this file is now in dfm.. yay!
 
 . $HOME/.bashrc.load
