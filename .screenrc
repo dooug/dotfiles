@@ -2,3 +2,29 @@
 term xterm-color
 shell -$SHELL
 defshell -bash 
+
+autodetach on # Autodetach session on hangup instead of terminating screen completely
+
+termcapinfo xterm ti@:te@
+
+# Enables use of shift-PgUp and shift-PgDn
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+# Erase background with current bg color
+defbce "on"
+
+windowlist title        " Num%+3=| Fl%+3=| Name"
+windowlist string       " %3n%+3=| %f%+3=| %t"
+
+# STATUSPANEL
+hardstatus alwayslastline
+hardstatus string '%{= kY}[ %{R}%H %{Y}][ %{g}load[%l] %{Y}][ %{B}%d/%m/%Y %c %{Y}][ %{r}%=%?%-w%?(%n%f %t)%?%+w%? %{Y}]'
+
+activity        "activity in %n (%t)"
+bell_msg        "bell in %n (%t)"
+defhstatus      "screen: ^En (^Et)"
+shelltitle      "$ |sh:"
+
+vbell           on
+vbell_msg       "WHAT ??!!"
+vbellwait       1
