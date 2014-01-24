@@ -1,0 +1,4 @@
+
+term xterm-color
+shell -$SHELL
+defshell -bash 
