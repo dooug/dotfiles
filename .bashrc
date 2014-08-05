@@ -135,3 +135,6 @@ alias d=dupscreen
 # this file is now in dfm.. yay!
 
 . $HOME/.bashrc.load
+
+#liquidprompt override:
+source ~/.liquidprompt/liquidprompt
