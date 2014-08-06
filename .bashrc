@@ -136,5 +136,10 @@ alias d=dupscreen
 
 . $HOME/.bashrc.load
 
+#git completion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 #liquidprompt override:
 source ~/.liquidprompt/liquidprompt
