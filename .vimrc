@@ -132,6 +132,12 @@ endif
   nmap :W :w
   nmap :Q :q
 
+" Escape on jk.
+  inoremap jk <ESC>
+
+" remap semicolon to colon for vim commands.
+  nnoremap ; :
+
   map Q gq
 " Don't use Ex mode, use Q for formatting
 "
@@ -313,7 +319,7 @@ nmap ,ci :w<CR>:!indent %<CR>:e!<CR>
   map <F8> :bd<C-M>
 
 " <Tab> is bound to `complete'
-inoremap <Tab> 
+  inoremap <Tab> 
 "
 " cycle fast thru buffers ...
 nnoremap <C-n> :bn<CR>
