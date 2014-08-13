@@ -141,5 +141,10 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+#vagrant completion
+if [ -f ~/.vagrant-completion.bash ]; then
+  . ~/.vagrant-completion.bash
+fi
+
 #liquidprompt override:
 source ~/.liquidprompt/liquidprompt
